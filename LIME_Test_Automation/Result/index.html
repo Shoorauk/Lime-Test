@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title></title>
+  <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@3da944e596e81f10ac6c1042c792af8a5a741023/commons/img/logo.png">
+  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@3da944e596e81f10ac6c1042c792af8a5a741023/commons/img/logo.png">
+  <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@8539670db814bf19a0ddbe9a6d19058aea0cf981/spark/css/spark-style.css" rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style> </style>
+</head>
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<body class="spa bdd-report standard">
+    <div class="app header-dark side-nav-folded">
+        <div class="layout">
+            <div class="header navbar">
+    <div class="header-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <div class="logo logo-dark" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+            <div class="logo logo-white" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+          </a>
+        </div>
+        <ul class="nav-left">
+          <li>
+            <a class="sidenav-fold-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a class="sidenav-expand-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+          <li class="search-box">
+            <a class="search-toggle" href="javascript:void(0);">
+              <i class="search-icon fa fa-search"></i>
+              <i class="search-icon-close fa fa-close"></i>
+            </a>
+          </li>
+          <li class="search-input">
+            <input id="search-tests" class="form-control" type="text" placeholder="Type to search...">
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li class="m-r-10">
+            <a href="#">
+              <span class="badge badge-primary"></span>
+            </a>
+          </li>
+            <li class="m-r-10">
+                <a href="#">
+                    <span class="badge badge-primary">19/05/2022 14:32:22</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+            <div class="side-nav side-nav-folded">
+  <div class="side-nav-inner">
+    <ul class="side-nav-menu scrollable">
+      <li class="nav-item dropdown" onclick="toggleView('test-view')">
+        <a id="nav-test" class="dropdown-toggle" href="index.html">
+          <span class="icon-holder">
+            <i class="fa fa-align-left"></i>
+          </span>
+          <span class="title">Tests</span>
+        </a>
+      </li>
+            <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+        <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
+          <span class="icon-holder">
+            <i class="fa fa-bar-chart"></i>
+          </span>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="side-nav-controls">
+    <ul>
+      <li>
+        <a href="#" class="lightsout" style="color:#8a8a8a;">
+          <i class="fa fa-desktop"></i>"</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+            <div class="page-container">
+                <div class="main-content">
+                    <div class="test-wrapper row test-view">
+    <div class="test-list">
+        <div class="test-list-tools">
+            <ul class="tools pull-left">
+                <li>
+                    <a href="">
+                        <span class="font-size-14">Tests</span>
+                    </a>
+                </li> 
+            </ul>
+            <ul class="tools text-right">
+				<li class="user-profile dropdown dropdown-animated scale-left">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="fa fa-exclamation-circle"></i>
+					</a>
+					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a status="pass" class="dropdown-item" href="#"><span>Pass</span><span class="status success pull-right"></span></a>						<a status="fail" class="dropdown-item" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>																														<div class="dropdown-divider"></div>
+						<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+					</ul>
+				</li>
+								            </ul>
+        </div>
+        <div class="test-list-wrapper scrollable">
+            <ul class="test-list-item">
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="1"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">CAM-8 page scnarios</p> 
+								<p class="duration text-sm">0h:0m:1s+285ms</p> 
+								<span class="datetime">14:32:24 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">CAM-8 page scnarios</h5>
+										<span class='badge badge-success'>19/05/2022 14:32:24</span>
+										<span class='badge badge-danger'>19/05/2022 14:32:25</span>
+										<span class='badge badge-default'>0h:0m:1s+285ms</span>
+									</div>
+																	</div>
+							</div>
+
+<div class="accordion mt-4">
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Scenario: Add a Material Type and verify the Material Type in Search page</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+                    <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-start given" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Given Navigate to Lime Home Page</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When the user clicked on CAM-8</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then "Search & Manage" page should be displayed</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When the user clicks on Add button</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When enter the Auto Test120 and Material type test 1000</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When Click on "Save"</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then the new Material Type is listed in the Search & Manage Page</span>
+                            </div>
+                    </div>
+				</div>
+	</div>
+</div>
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="10"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">CAM-8 page scnarios</p> 
+								<p class="duration text-sm">0h:0m:0s+751ms</p> 
+								<span class="datetime">14:32:26 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">CAM-8 page scnarios</h5>
+										<span class='badge badge-success'>19/05/2022 14:32:26</span>
+										<span class='badge badge-danger'>19/05/2022 14:32:27</span>
+										<span class='badge badge-default'>0h:0m:0s+751ms</span>
+									</div>
+																	</div>
+							</div>
+
+<div class="accordion mt-4">
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Scenario: Validate the material type text</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+                    <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-start given" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Given Navigate to Lime Home Page</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When the user clicked on CAM-8</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then "Material Types" Material type text should be displayed</span>
+                            </div>
+                    </div>
+				</div>
+	</div>
+</div>
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="15"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">CAM-8 page scnarios</p> 
+								<p class="duration text-sm">0h:0m:0s+590ms</p> 
+								<span class="datetime">14:32:29 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">CAM-8 page scnarios</h5>
+										<span class='badge badge-success'>19/05/2022 14:32:29</span>
+										<span class='badge badge-danger'>19/05/2022 14:32:29</span>
+										<span class='badge badge-default'>0h:0m:0s+590ms</span>
+									</div>
+																	</div>
+							</div>
+
+<div class="accordion mt-4">
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Scenario: Verify the home page title</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+                    <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-start given" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Given Navigate to Lime Home Page</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When Click on home page link</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then "Caminho.LIME" title should be displayed</span>
+                            </div>
+                    </div>
+				</div>
+	</div>
+</div>
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="20"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">FeaturesLink</p> 
+								<p class="duration text-sm">0h:0m:0s+648ms</p> 
+								<span class="datetime">14:32:31 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">FeaturesLink</h5>
+										<span class='badge badge-success'>19/05/2022 14:32:31</span>
+										<span class='badge badge-danger'>19/05/2022 14:32:32</span>
+										<span class='badge badge-default'>0h:0m:0s+648ms</span>
+									</div>
+																	</div>
+							</div>
+
+<div class="accordion mt-4">
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Scenario: Verify the feature page title</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+                    <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-start given" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Given Navigate to Lime Home Page</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When Click on feature page link</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then "Features" feature title should be displayed</span>
+                            </div>
+                    </div>
+				</div>
+	</div>
+</div>
+						</div>
+					</li>
+					<li class="test-item" status="fail" author="" device="" tag="" test-id="25"> 
+						<div class="status-avatar fail-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">FeaturesLink</p> 
+								<p class="duration text-sm">0h:0m:0s+904ms</p> 
+								<span class="datetime">14:32:33 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fail">FeaturesLink</h5>
+										<span class='badge badge-success'>19/05/2022 14:32:33</span>
+										<span class='badge badge-danger'>19/05/2022 14:32:34</span>
+										<span class='badge badge-default'>0h:0m:0s+904ms</span>
+									</div>
+																	</div>
+							</div>
+
+<div class="accordion mt-4">
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Scenario: Verify the redirection of reload feature button</div>
+				<div class="status-avatar float-left fail-bg">
+					<i class="fa fa-times text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+                    <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-start given" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Given Navigate to Lime Home Page</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When Click on feature page link</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When Click on reload feature button</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon fail-bg">
+                                    <i class="fa fa-times text-white"></i>
+                                </span>
+                                <span>Then "Caminho.LEME" title should be displayed</span>
+                            </div>
+			<div class="details">stale element reference: element is not attached to the page document
+  (Session info: chrome=101.0.4951.54)</div>
+			<span class="badge badge-primary"><a href='data:image/png;base64,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' data-featherlight='image'><span class='label grey badge white-text text-white'>base64-img</span></a></span>
+                    </div>
+				</div>
+	</div>
+</div>
+						</div>
+					</li>
+            </ul>    
+        </div>
+    </div>
+    <div class="test-content scrollable">
+        <div class="test-content-tools">
+            <ul>
+                <li>
+                    <a class="back-to-test" href="javascript:void(0)">
+                        <i class="fa fa-arrow-left"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="test-content-detail">
+            <div class="detail-body"></div>
+        </div>
+    </div>
+</div>
+										<div class="container-fluid p-4 dashboard-view">
+	<div class="row">
+		<div class="col-sm-12 col-md-4">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Features</h6>
+				</div>
+				<div class="card-body">
+	                <div class="">
+	                    <canvas id='parent-analysis' width='115' height='90'></canvas>
+	                </div>
+	            </div>
+	            <div class="card-footer">
+	                <div><small data-tooltip='80%'>
+	                    <b>4</b> features passed
+                    </small></div>
+	                <div>
+	                    <small data-tooltip='20%'><b>1</b> features failed, 
+	                    <b data-tooltip='0%'>0</b> others
+	                    </small>
+                    </div>
+	            </div>
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-4">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Scenarios</h6>
+				</div>
+				<div class="card-body">
+	                <div class="">
+	                    <canvas id='child-analysis' width='115' height='90'></canvas>
+	                </div>
+	            </div>
+	            <div class="card-footer">
+	                <div><small data-tooltip='80%'><b>4</b> scenarios passed</small></div>
+	                <div>
+	                    <small data-tooltip='20%'><b>1</b> scenarios failed, 
+	                    <b data-tooltip='0%'>0</b> others
+	                    </small>
+                    </div>
+	            </div>
+			</div>
+		</div>
+				<div class="col-sm-12 col-md-4">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Steps</h6>
+				</div>
+				<div class="card-body">
+	                <div class="">
+	                    <canvas id='grandchild-analysis' width='115' height='90'></canvas>
+	                </div>
+	            </div>
+	            <div class="card-footer">
+	                <div><small data-tooltip='95%'><b>19</b> steps passed</small></div>
+	                <div>
+	                    <small data-tooltip='5%'><b>1</b> steps failed, 
+	                    <b data-tooltip='0%'>0</b> others
+	                    </small>
+                    </div>
+	            </div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<h6 class="card-title">Features</h6>
+							<h2 class="font-size-28 font-weight-light">5</h2>
+							<span class="text-semibold text-success font-size-15">
+							<i class="ti-arrow-up font-size-11"></i> 
+								<span>80%</span>
+							</span>
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-align-left font-size-70 opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<h6 class="card-title">Scenarios</h6>
+							<h2 class="font-size-28 font-weight-light">5</h2>
+							<span class="text-semibold text-success font-size-15">
+							<i class="ti-arrow-up font-size-11"></i> 
+								<span>80%</span>
+							</span>
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-align-left font-size-70 opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<h6 class="card-title">Start</h6>
+							<h6 class="font-weight-light">19/05/2022 14:32:22</h6>
+							<span class="text-semibold text-success font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 text-success opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<h6 class="card-title">Duration</h6>
+							<h6 class="font-weight-light">00:00:12.0529080</h6>
+							<span class="text-semibold text-danger font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 text-danger opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+							</div>
+</div>
+<script>
+	var statusGroup = {
+    parentCount: 5,
+		passParent: 4,
+		failParent: 1,
+		fatalParent: 0,
+		errorParent: 0,
+		warningParent: 0,
+		skipParent: 0,
+		exceptionsParent: 1,
+		childCount: 5,
+		passChild: 4,
+		failChild: 1,
+		fatalChild: 0,
+		errorChild: 0,
+		warningChild: 0,
+		skipChild: 0,
+		infoChild: 0,
+		debugChild: 0,
+		exceptionsChild: 1,
+		grandChildCount: 20,
+		passGrandChild: 19,
+		failGrandChild: 1,
+		fatalGrandChild: 0,
+		errorGrandChild: 0,
+		warningGrandChild: 0,
+		skipGrandChild: 0,
+		infoGrandChild: 0,
+		debugGrandChild: 0,
+		exceptionsGrandChild: 1,
+	};
+</script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+	<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@cc89904c1a12065be1d08fc4994a258ef01b12bd/spark/js/scripts.js"></script>
+<script type='text/javascript'>
+	
+</script>
+</body>
+
+</html>
